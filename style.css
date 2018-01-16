@@ -1,0 +1,153 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #bec3c7;
+}
+
+.app{
+    display: block;
+    margin: 0 auto;
+    background: white;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.reservation-block + .choice-block{
+    height: 100%;
+    vertical-align: middle;
+}
+
+.legend{
+    height: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.legend div{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.square{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.reservation-square{
+    background: #ec4b39;
+}
+
+.choice-square{
+    background: #2dcc70;
+}
+
+.month-year{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.collapse{
+    visibility: collapse;
+}
+
+.main-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.calendar table{
+    border-collapse: collapse;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.calendar td{
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.calendar thead{
+    font-weight: 600;
+}
+
+.calendar .inactive{
+    color: gray;
+    cursor: default;
+}
+
+
+
+.calendar .booked{
+    color: white;
+    background: #ec4b39;
+    cursor: default;
+}
+
+.calendar .chosen{
+    color: white;
+    background: #2dcc70;
+}
+
+
+
+#btn-reservation{
+    color: white;
+    font-weight: 600;
+    background: #2dcc70;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.btn-shadow{
+    padding: 10px 20px;
+}
+
+.btn-shadow-bottom{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.btn-shadow-top{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0));
+}
+
+#success-message{
+    color: #2dcc70;
+    text-align: center;
+}
+
+
+
+@media (max-device-width:580px){
+    .main-block{
+        flex-direction: column;
+    }
+    .btn-reservation-and-success-message{
+        margin-top: 20px;
+    }
+    .app{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
